@@ -1,0 +1,35 @@
+
+source_file = [
+	'SkBmpBaseCodec.cpp',
+	'SkBmpCodec.cpp',
+	'SkBmpMaskCodec.cpp',
+	'SkBmpRLECodec.cpp',
+	'SkBmpStandardCodec.cpp',
+	'SkCodec.cpp',
+	'SkCodecImageGenerator.cpp',
+	'SkColorTable.cpp',
+	'SkEncodedInfo.cpp',
+	'SkGifCodec.cpp',
+    #'SkHeifCodec.cpp',
+    #'SkIcoCodec.cpp',
+	#'SkJpegCodec.cpp',
+	#'SkJpegDecoderMgr.cpp',
+	#'SkJpegUtility.cpp',
+	'SkMaskSwizzler.cpp',
+	'SkMasks.cpp',
+	'SkParseEncodedOrigin.cpp',
+	#'SkPngCodec.cpp',
+	#'SkRawCodec.cpp',
+	#'SkSampledCodec.cpp',
+	#'SkSampler.cpp',
+	'SkStreamBuffer.cpp',
+	'SkSwizzler.cpp',
+	'SkWbmpCodec.cpp',
+    #'SkWebpCodec.cpp',
+    #'SkWuffsCodec.cpp',
+	]
+
+skcodec_dep = declare_dependency(
+                                    include_directories : include_directories('.'),
+                                    sources : source_file,
+                                 )
